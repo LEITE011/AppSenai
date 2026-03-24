@@ -1,8 +1,11 @@
 import flet
-from flet import ThemeMode, Text, TextField, Button, OutlinedButton, Column, CrossAxisAlignment
+from flet import ThemeMode, Text, TextField, Button, OutlinedButton, Column, CrossAxisAlignment, Container, Colors, \
+    FontWeight
 from flet.controls import page
 from flet.controls.border_radius import horizontal
 from datetime import datetime
+
+from flet.controls.core.canvas import Color
 
 
 def main(page: flet.Page):
@@ -33,7 +36,7 @@ def main(page: flet.Page):
         text.value = texto
 
     # Componetes
-    text = Text()
+    text2 = Text()
     input_numero1 = TextField(label="Digite um Numero Par ou Impar Para a Verificação")
     btn_verificar = OutlinedButton("Verificar", on_click=verificar_par_inpar)
 
@@ -49,7 +52,7 @@ def main(page: flet.Page):
         text.value = textoo
 
     # Componetes
-    text = Text()
+    text3 = Text()
     input_ano = TextField(label="Digite o Ano de Nascimento da Pessoa")
     btn_ano = OutlinedButton("Verificar Ano", on_click=verificar_maior)
 
@@ -58,14 +61,58 @@ def main(page: flet.Page):
     page.add(
         Column(
             [
-                input_nome,
-                input_sobrenome,
-                btn_salvar,
-                input_numero1,
-                btn_verificar,
-                input_ano,
-                btn_ano,
-                text
+                Container(
+                    Column(
+                        [
+                            Text("Atividade 1", weight=FontWeight.BOLD, size=24),
+                            input_nome,
+                            input_sobrenome,
+                            btn_salvar,
+                            text,
+                        ],
+                        horizontal_alignment=CrossAxisAlignment.CENTER,
+                    ),
+                    bgcolor=Colors.BLUE_700,
+                    padding=15,
+                    border_radius=10,
+                    width=400,
+
+                ),
+
+                Container(
+                    Column(
+                        [
+                            Text("Atividade 2", weight=FontWeight.BOLD, size=24),
+                            input_numero1,
+                            btn_verificar,
+                            text2,
+                        ],
+                        horizontal_alignment=CrossAxisAlignment.CENTER,
+                    ),
+                    bgcolor=Colors.RED_700,
+                    padding=15,
+                    border_radius=10,
+                    width=400,
+
+                ),
+
+                Container(
+                    Column(
+                        [
+                            Text("Atividade 3", weight=FontWeight.BOLD, size=24),
+                            input_ano,
+                            btn_ano,
+                            text3,
+                        ],
+                        horizontal_alignment=CrossAxisAlignment.CENTER,
+                    ),
+                    bgcolor=Colors.GREEN_700,
+                    padding=15,
+                    border_radius=10,
+                    width=400,
+
+                ),
+
             ],
             width=400,
             horizontal_alignment=CrossAxisAlignment.CENTER
