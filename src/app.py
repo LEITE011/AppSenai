@@ -2,6 +2,7 @@ import flet
 from flet import ThemeMode, Text, TextField, Button, OutlinedButton, Column, CrossAxisAlignment
 from flet.controls import page
 from flet.controls.border_radius import horizontal
+from datetime import datetime
 
 
 def main(page: flet.Page):
@@ -38,7 +39,7 @@ def main(page: flet.Page):
 
     def verificar_maior():
         menor_minimo = int(input_ano.value)
-        maior_ou_menor = 2026 - menor_minimo
+        maior_ou_menor = datetime.now().year - menor_minimo
 
         if maior_ou_menor >= 18:
             textoo = f'Se a Pessoa tem {menor_minimo} a pessoa é maior de Idade'
@@ -64,7 +65,7 @@ def main(page: flet.Page):
                 btn_verificar,
                 input_ano,
                 btn_ano,
-                text,
+                text
             ],
             width=400,
             horizontal_alignment=CrossAxisAlignment.CENTER
@@ -72,4 +73,4 @@ def main(page: flet.Page):
     )
 
 
-flet.app(main)
+flet.run(main)
