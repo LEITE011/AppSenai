@@ -23,36 +23,33 @@ def main(page: flet.Page):
     input_sobrenome = TextField(label="sobrenome")
     btn_salvar = OutlinedButton("Salvar", on_click=salvar_nome)
 
-
     def verificar_par_inpar():
-            numero2 = int(input_numero1.value)
-            if numero2 % 2 == 0:
-                texto = f'{numero2} o numero é par'
-            else:
-                texto =  f'{numero2} o numero é impar'
-            text.value = texto
-
+        numero2 = int(input_numero1.value)
+        if numero2 % 2 == 0:
+            texto = f'{numero2} o numero é par'
+        else:
+            texto = f'{numero2} o numero é impar'
+        text.value = texto
 
     # Componetes
     text = Text()
-    input_numero1 = TextField(label="Digite um Numero")
+    input_numero1 = TextField(label="Digite um Numero Par ou Impar Para a Verificação")
     btn_verificar = OutlinedButton("Verificar", on_click=verificar_par_inpar)
 
     def verificar_maior():
         menor_minimo = int(input_ano.value)
-        maior_ou_menor = menor_minimo - 2026
+        maior_ou_menor = 2026 - menor_minimo
 
         if maior_ou_menor >= 18:
-            textoo = f'Se Nasceu em {menor_minimo} a pessoa é maior de Idade'
+            textoo = f'Se a Pessoa tem {menor_minimo} a pessoa é maior de Idade'
 
-        elif maior_ou_menor < 18:
-            textoo = f'Se Nasceu em {menor_minimo} a pessoa é menor de Idade'
-
+        else:
+            textoo = f'Se a Pessoa tem {menor_minimo} a pessoa é menor de Idade'
         text.value = textoo
 
     # Componetes
     text = Text()
-    input_ano = TextField(label="Digite o Ano de Nascimento")
+    input_ano = TextField(label="Digite o Ano de Nascimento da Pessoa")
     btn_ano = OutlinedButton("Verificar Ano", on_click=verificar_maior)
 
     # Construção da Tela
@@ -65,13 +62,14 @@ def main(page: flet.Page):
                 btn_salvar,
                 input_numero1,
                 btn_verificar,
-                text,
+                input_ano,
                 btn_ano,
-
+                text,
             ],
             width=400,
             horizontal_alignment=CrossAxisAlignment.CENTER
         )
     )
+
 
 flet.app(main)
