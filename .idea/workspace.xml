@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34b739d1-5a35-4dc6-bcf5-57569524e52f" name="Changes" comment="24/03 parte 2">
-      <change afterPath="$PROJECT_DIR$/src/app_navegacao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app_navegacao1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app_navegacao2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app_navegacao3.py" afterDir="false" />
+    <list default="true" id="34b739d1-5a35-4dc6-bcf5-57569524e52f" name="Changes" comment="31/03">
+      <change afterPath="$PROJECT_DIR$/src/app_listas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app_listas_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app_listas_exemplo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exemplo de fontes iliciatas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +47,14 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.app.executor": "Run",
+    "Python.app_listas.executor": "Run",
+    "Python.app_listas_2.executor": "Run",
+    "Python.app_listas_exemplo.executor": "Run",
     "Python.app_navegacao.executor": "Run",
     "Python.app_navegacao1.executor": "Run",
     "Python.app_navegacao2.executor": "Run",
     "Python.app_navegacao3.executor": "Run",
+    "Python.exemplo de fontes iliciatas.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -84,7 +88,11 @@
       <workItem from="1773767620787" duration="7534000" />
       <workItem from="1774349285759" duration="9604000" />
       <workItem from="1774869348201" duration="413000" />
-      <workItem from="1774954475092" duration="18245000" />
+      <workItem from="1774954475092" duration="18319000" />
+      <workItem from="1775577953307" duration="597000" />
+      <workItem from="1777287255155" duration="21000" />
+      <workItem from="1777315505172" duration="187000" />
+      <workItem from="1777893276704" duration="38472000" />
     </task>
     <task id="LOCAL-00001" summary="17/03">
       <option name="closed" value="true" />
@@ -118,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774370002075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="31/03">
+      <option name="closed" value="true" />
+      <created>1774983071177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774983071177</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,13 +144,18 @@
     <MESSAGE value="17/03" />
     <MESSAGE value="24/03" />
     <MESSAGE value="24/03 parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/03 parte 2" />
+    <MESSAGE value="31/03" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/03" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao3.coverage" NAME="app_navegacao3 Coverage Results" MODIFIED="1774982816887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao3.coverage" NAME="app_navegacao3 Coverage Results" MODIFIED="1777999446510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_listas_2.coverage" NAME="app_listas_2 Coverage Results" MODIFIED="1778001422315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/AppSenai$app_navegacao.coverage" NAME="app_navegacao Coverage Results" MODIFIED="1774982888821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao1.coverage" NAME="app_navegacao1 Coverage Results" MODIFIED="1774983044278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao2.coverage" NAME="app_navegacao2 Coverage Results" MODIFIED="1774982819773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao1.coverage" NAME="app_navegacao1 Coverage Results" MODIFIED="1777315507005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_listas_exemplo.coverage" NAME="app_listas_exemplo Coverage Results" MODIFIED="1777988009924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_listas.coverage" NAME="app_listas Coverage Results" MODIFIED="1777986848988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$app_navegacao2.coverage" NAME="app_navegacao2 Coverage Results" MODIFIED="1777997854706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/AppSenai$app.coverage" NAME="app Coverage Results" MODIFIED="1774370343221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AppSenai$exemplo_de_fontes_iliciatas.coverage" NAME="exemplo de fontes iliciatas Coverage Results" MODIFIED="1777990567757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
